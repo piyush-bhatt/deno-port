@@ -35,7 +35,7 @@ Type: `number`
 Type: `string`
 
 ##### transport
-Type: `string`
+Type: `string`\
 Values: `tcp`
 
 ---
@@ -52,16 +52,16 @@ Returns an available port number based on the options provided.
 Type: `object`
 
 ##### port
-Type: `number[] | { start: number, end: number }`
-If not provided, a random port will be returned
-If an array of ports is provided, the first encountered available port in the array will be returned
+Type: `number[] | { start: number, end: number }`\
+If not provided, a random port will be returned\
+If an array of ports is provided, the first encountered available port in the array will be returned\
 If a range is provided, the first encountered available port in the range will be returned
 
 ##### hostname
 Type: `string`
 
 ##### transport
-Type: `string`
+Type: `string`\
 Values: `tcp`
 
 ---
