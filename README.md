@@ -17,11 +17,11 @@ import {
 ## Usage
 
 ### isPortAvailable(options)
-_Requires `--allow-net` flag_
+_Requires `--allow-net` flag_\
 Returns a promise which resolves to `true` if a given port is available, else `false`.
 
 ### isPortAvailableSync(options)
-_Requires `--allow-net` flag_
+_Requires `--allow-net` flag_\
 Returns `true` if a given port is available, else `false`.
 
 #### options
@@ -41,11 +41,11 @@ Values: `tcp`
 ---
 
 ### getAvailablePort(options)
-_Requires `--allow-net` flag_
+_Requires `--allow-net` flag_\
 Returns a promise which resolves to an available port number based on the options provided.
 
 ### getAvailablePortSync(options)
-_Requires `--allow-net` flag_
+_Requires `--allow-net` flag_\
 Returns an available port number based on the options provided.
 
 #### options
@@ -67,7 +67,7 @@ Values: `tcp`
 ---
 
 ### killProcessOnPort(port)
-_Requires `--allow-run` and `--allow-net` flag_
+_Requires `--allow-run` and `--allow-net` flag_\
 Kills the process running on the given port. Returns `true` if the process is killed successfully and the port is free, else `false`.
 
 #### port
