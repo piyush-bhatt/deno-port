@@ -179,11 +179,11 @@ export async function killProcessOnPort(port: number): Promise<boolean> {
 async function getRandomPort(options: IOptions): Promise<number> {
   const randomPort = random(0, 65535);
   if (
-    isPortAvailable({
+    (await isPortAvailable({
       port: randomPort,
       ...(options.hostname ? { hostname: options.hostname } : {}),
       ...(options.transport ? { transport: options.transport } : {}),
-    })
+    })) === true
   ) {
     return randomPort;
   } else {
@@ -198,7 +198,7 @@ async function getRandomPort(options: IOptions): Promise<number> {
 function getRandomPortSync(options: IOptions): number {
   const randomPort = random(0, 65535);
   if (
-    isPortAvailable({
+    isPortAvailableSync({
       port: randomPort,
       ...(options.hostname ? { hostname: options.hostname } : {}),
       ...(options.transport ? { transport: options.transport } : {}),
