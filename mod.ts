@@ -183,7 +183,7 @@ async function getRandomPort(options: IOptions): Promise<number> {
       port: randomPort,
       ...(options.hostname ? { hostname: options.hostname } : {}),
       ...(options.transport ? { transport: options.transport } : {}),
-    }) === true)
+    })) === true
   ) {
     return randomPort;
   } else {
